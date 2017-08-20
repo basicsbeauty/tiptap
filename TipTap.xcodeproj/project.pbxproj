@@ -11,10 +11,23 @@
 		5CB74E601F48E7EE009CF17B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB74E5F1F48E7EE009CF17B /* ViewController.swift */; };
 		5CB74E631F48E7EE009CF17B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB74E611F48E7EE009CF17B /* Main.storyboard */; };
 		5CB74E661F48E7EE009CF17B /* TipTap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CB74E641F48E7EE009CF17B /* TipTap.xcdatamodeld */; };
-		5CB74E681F48E7EE009CF17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB74E671F48E7EE009CF17B /* Assets.xcassets */; };
 		5CB74E6B1F48E7EE009CF17B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CB74E691F48E7EE009CF17B /* LaunchScreen.storyboard */; };
 		5CB74E761F48E7EE009CF17B /* TipTapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB74E751F48E7EE009CF17B /* TipTapTests.swift */; };
 		5CB74E811F48E7EE009CF17B /* TipTapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB74E801F48E7EE009CF17B /* TipTapUITests.swift */; };
+		5CB74E9C1F48ED43009CF17B /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB74E901F48ED43009CF17B /* Roboto-Black.ttf */; };
+		5CB74E9D1F48ED43009CF17B /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB74E911F48ED43009CF17B /* Roboto-BlackItalic.ttf */; };
+		5CB74E9E1F48ED43009CF17B /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB74E921F48ED43009CF17B /* Roboto-Bold.ttf */; };
+		5CB74E9F1F48ED43009CF17B /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB74E931F48ED43009CF17B /* Roboto-BoldItalic.ttf */; };
+		5CB74EA01F48ED43009CF17B /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB74E941F48ED43009CF17B /* Roboto-Italic.ttf */; };
+		5CB74EA11F48ED43009CF17B /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB74E951F48ED43009CF17B /* Roboto-Light.ttf */; };
+		5CB74EA21F48ED43009CF17B /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB74E961F48ED43009CF17B /* Roboto-LightItalic.ttf */; };
+		5CB74EA31F48ED43009CF17B /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB74E971F48ED43009CF17B /* Roboto-Medium.ttf */; };
+		5CB74EA41F48ED43009CF17B /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB74E981F48ED43009CF17B /* Roboto-MediumItalic.ttf */; };
+		5CB74EA51F48ED43009CF17B /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB74E991F48ED43009CF17B /* Roboto-Regular.ttf */; };
+		5CB74EA61F48ED43009CF17B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB74E9A1F48ED43009CF17B /* Roboto-Thin.ttf */; };
+		5CB74EA71F48ED43009CF17B /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CB74E9B1F48ED43009CF17B /* Roboto-ThinItalic.ttf */; };
+		5CB74EA91F496DB5009CF17B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB74EA81F496DB5009CF17B /* SettingsViewController.swift */; };
+		5CB74EAD1F49917F009CF17B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CB74EAC1F49917F009CF17B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +53,6 @@
 		5CB74E5F1F48E7EE009CF17B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5CB74E621F48E7EE009CF17B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CB74E651F48E7EE009CF17B /* TipTap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TipTap.xcdatamodel; sourceTree = "<group>"; };
-		5CB74E671F48E7EE009CF17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CB74E6A1F48E7EE009CF17B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CB74E6C1F48E7EE009CF17B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CB74E711F48E7EE009CF17B /* TipTapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipTapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +61,20 @@
 		5CB74E7C1F48E7EE009CF17B /* TipTapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipTapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB74E801F48E7EE009CF17B /* TipTapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipTapUITests.swift; sourceTree = "<group>"; };
 		5CB74E821F48E7EE009CF17B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CB74E901F48ED43009CF17B /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Black.ttf"; path = "../../Google Drive/Enlaps/Fonts/Roboto/Roboto-Black.ttf"; sourceTree = "<group>"; };
+		5CB74E911F48ED43009CF17B /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BlackItalic.ttf"; path = "../../Google Drive/Enlaps/Fonts/Roboto/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		5CB74E921F48ED43009CF17B /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../../Google Drive/Enlaps/Fonts/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		5CB74E931F48ED43009CF17B /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BoldItalic.ttf"; path = "../../Google Drive/Enlaps/Fonts/Roboto/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5CB74E941F48ED43009CF17B /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Italic.ttf"; path = "../../Google Drive/Enlaps/Fonts/Roboto/Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		5CB74E951F48ED43009CF17B /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../../Google Drive/Enlaps/Fonts/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; };
+		5CB74E961F48ED43009CF17B /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-LightItalic.ttf"; path = "../../Google Drive/Enlaps/Fonts/Roboto/Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		5CB74E971F48ED43009CF17B /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../../Google Drive/Enlaps/Fonts/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		5CB74E981F48ED43009CF17B /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-MediumItalic.ttf"; path = "../../Google Drive/Enlaps/Fonts/Roboto/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		5CB74E991F48ED43009CF17B /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../../Google Drive/Enlaps/Fonts/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		5CB74E9A1F48ED43009CF17B /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Thin.ttf"; path = "../../Google Drive/Enlaps/Fonts/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		5CB74E9B1F48ED43009CF17B /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-ThinItalic.ttf"; path = "../../Google Drive/Enlaps/Fonts/Roboto/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		5CB74EA81F496DB5009CF17B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5CB74EAC1F49917F009CF17B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +105,7 @@
 		5CB74E511F48E7EE009CF17B = {
 			isa = PBXGroup;
 			children = (
+				5CB74E8E1F48ECFD009CF17B /* Resources */,
 				5CB74E5C1F48E7EE009CF17B /* TipTap */,
 				5CB74E741F48E7EE009CF17B /* TipTapTests */,
 				5CB74E7F1F48E7EE009CF17B /* TipTapUITests */,
@@ -102,7 +129,8 @@
 				5CB74E5D1F48E7EE009CF17B /* AppDelegate.swift */,
 				5CB74E5F1F48E7EE009CF17B /* ViewController.swift */,
 				5CB74E611F48E7EE009CF17B /* Main.storyboard */,
-				5CB74E671F48E7EE009CF17B /* Assets.xcassets */,
+				5CB74EAC1F49917F009CF17B /* Assets.xcassets */,
+				5CB74EA81F496DB5009CF17B /* SettingsViewController.swift */,
 				5CB74E691F48E7EE009CF17B /* LaunchScreen.storyboard */,
 				5CB74E6C1F48E7EE009CF17B /* Info.plist */,
 				5CB74E641F48E7EE009CF17B /* TipTap.xcdatamodeld */,
@@ -126,6 +154,33 @@
 				5CB74E821F48E7EE009CF17B /* Info.plist */,
 			);
 			path = TipTapUITests;
+			sourceTree = "<group>";
+		};
+		5CB74E8E1F48ECFD009CF17B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5CB74E8F1F48ED04009CF17B /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5CB74E8F1F48ED04009CF17B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5CB74E901F48ED43009CF17B /* Roboto-Black.ttf */,
+				5CB74E911F48ED43009CF17B /* Roboto-BlackItalic.ttf */,
+				5CB74E921F48ED43009CF17B /* Roboto-Bold.ttf */,
+				5CB74E931F48ED43009CF17B /* Roboto-BoldItalic.ttf */,
+				5CB74E941F48ED43009CF17B /* Roboto-Italic.ttf */,
+				5CB74E951F48ED43009CF17B /* Roboto-Light.ttf */,
+				5CB74E961F48ED43009CF17B /* Roboto-LightItalic.ttf */,
+				5CB74E971F48ED43009CF17B /* Roboto-Medium.ttf */,
+				5CB74E981F48ED43009CF17B /* Roboto-MediumItalic.ttf */,
+				5CB74E991F48ED43009CF17B /* Roboto-Regular.ttf */,
+				5CB74E9A1F48ED43009CF17B /* Roboto-Thin.ttf */,
+				5CB74E9B1F48ED43009CF17B /* Roboto-ThinItalic.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +287,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB74EA71F48ED43009CF17B /* Roboto-ThinItalic.ttf in Resources */,
+				5CB74EA61F48ED43009CF17B /* Roboto-Thin.ttf in Resources */,
 				5CB74E6B1F48E7EE009CF17B /* LaunchScreen.storyboard in Resources */,
-				5CB74E681F48E7EE009CF17B /* Assets.xcassets in Resources */,
+				5CB74EA21F48ED43009CF17B /* Roboto-LightItalic.ttf in Resources */,
+				5CB74EAD1F49917F009CF17B /* Assets.xcassets in Resources */,
+				5CB74E9E1F48ED43009CF17B /* Roboto-Bold.ttf in Resources */,
+				5CB74EA41F48ED43009CF17B /* Roboto-MediumItalic.ttf in Resources */,
+				5CB74E9D1F48ED43009CF17B /* Roboto-BlackItalic.ttf in Resources */,
 				5CB74E631F48E7EE009CF17B /* Main.storyboard in Resources */,
+				5CB74EA01F48ED43009CF17B /* Roboto-Italic.ttf in Resources */,
+				5CB74E9F1F48ED43009CF17B /* Roboto-BoldItalic.ttf in Resources */,
+				5CB74EA31F48ED43009CF17B /* Roboto-Medium.ttf in Resources */,
+				5CB74EA51F48ED43009CF17B /* Roboto-Regular.ttf in Resources */,
+				5CB74E9C1F48ED43009CF17B /* Roboto-Black.ttf in Resources */,
+				5CB74EA11F48ED43009CF17B /* Roboto-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +329,7 @@
 				5CB74E661F48E7EE009CF17B /* TipTap.xcdatamodeld in Sources */,
 				5CB74E601F48E7EE009CF17B /* ViewController.swift in Sources */,
 				5CB74E5E1F48E7EE009CF17B /* AppDelegate.swift in Sources */,
+				5CB74EA91F496DB5009CF17B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +554,7 @@
 				5CB74E871F48E7EE009CF17B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5CB74E881F48E7EE009CF17B /* Build configuration list for PBXNativeTarget "TipTapTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +563,7 @@
 				5CB74E8A1F48E7EE009CF17B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5CB74E8B1F48E7EE009CF17B /* Build configuration list for PBXNativeTarget "TipTapUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +572,7 @@
 				5CB74E8D1F48E7EE009CF17B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
