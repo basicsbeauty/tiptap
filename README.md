@@ -4,7 +4,7 @@ TipTap is a tip calculator application for iOS.
 
 Submitted by: Siva Satish
 
-Time spent: 4 hours spent in total
+Time spent: 6 hours spent in total
 
 ## User Stories
 
@@ -22,7 +22,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [x] Added Launch Icon
-- [x] Added color themes
+- [x] Added custom color theme
 - [x] Added custom font for text/labels
 - [x] Added currency symbol as another preference along with tip percentage
 
@@ -30,12 +30,6 @@ The following **additional** features are implemented:
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
-
-<img src='http://i.imgur.com/CYiicqs.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<img src='http://i.imgur.com/CYiicqs.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-![](http://i.imgur.com/CYiicqs.gif)
-{giphy "http://i.imgur.com/CYiicqs.gif"}
-
 ![Video Walkthrough](tiptap.gif)
 
 
