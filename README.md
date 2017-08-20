@@ -46,6 +46,7 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 **Answer:** Felt iOS app development is much better experience than Android. It's faster to start/modify/test and easier to implement MVC pattern. The entier IDE feels faster compared to Android Studio.
  - Outlets are logical reference of UI(or View) elements in the code base.
  - Actions are essentially event handlers
+ 
  For Outlets, internal implementation might be that each View will have list/map of different places where it was used.
  For Actions, might be implemented using listener/call back model. Each View/UI element will have map for each action and each action will have list of listeners/handler/signal handler that it invokes when a particular action was invoked.
  
