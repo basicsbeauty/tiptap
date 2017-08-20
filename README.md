@@ -23,13 +23,17 @@ The following **additional** features are implemented:
 
 - [x] Added Launch Icon
 - [x] Added color themes
-- [x] Added currency symbol as another preference
+- [x] Added custom font for text/labels
+- [x] Added currency symbol as another preference along with tip percentage
+
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<!-- <img src='http://www.giphy.com/gifs/3owvJSuQaCnm12im0U' title='Video Walkthrough' width='' alt='Video Walkthrough' /> -->
+
+<iframe src="https://giphy.com/embed/3owvJSuQaCnm12im0U" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tiptap-3owvJSuQaCnm12im0U">via GIPHY</a></p>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
