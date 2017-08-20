@@ -36,6 +36,8 @@ Here's a walkthrough of implemented user stories:
 ![](http://i.imgur.com/CYiicqs.gif)
 {giphy "http://i.imgur.com/CYiicqs.gif"}
 
+![Video Walkthrough](tiptap.gif)
+
 
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
