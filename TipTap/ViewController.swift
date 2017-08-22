@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblCurrency2: UILabel!
     @IBOutlet weak var lblCurrency3: UILabel!
     
+    let de = UserDefaults.standard
+
+    
     var ti: Int = 0
     var cs: String = "$"
     
@@ -27,7 +30,39 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func viewDidAppear(animated: Bool) {
+    func loadData() {
+        if (de.object(forKey: "tip_index") != nil) {
+            ti = de.integer(forKey: "tip_index")
+        }
+        
+        if de.object(forKey: "currency_symbol") != nil {
+            cs = de.object(forKey: "currency_symbol") as! String
+        }
+    }
+    
+    func saveBillAmount() {
+        let bill = Double(txtBillAmount.text!) ?? 0
+        de.set(bill, forKey: "bill_amount")
+        // Also save timestamp
+        print(NSDate().timeIntervalSince1970)
+        print(Int(NSDate().timeIntervalSince1970))
+        de.set(Int(NSDate().timeIntervalSince1970), forKey:"bill_ts")
+        de.synchronize()
+    }
+    
+    func isValidBillAmountSaved() -> Bool {
+        let cur_ts:Int = Int(NSDate().timeIntervalSince1970)
+        if de.object(forKey: "bill_ts") != nil {
+            let saved_ts:Int = de.integer(forKey: "bill_ts")
+            let CUTOFF_IN_SECONDS:Int = 10 * 60
+            if cur_ts-saved_ts < CUTOFF_IN_SECONDS {
+                return true
+            }
+        }
+        return false
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
         loadData()
         
         // Tip
@@ -37,6 +72,14 @@ class ViewController: UIViewController {
         lblCurrency1.text = cs
         lblCurrency2.text = cs
         lblCurrency3.text = cs
+        
+        // Bill Amount
+        if isValidBillAmountSaved() {
+            if de.object(forKey: "bill_amount") != nil {
+                txtBillAmount.text = String(format: "%.2f", de.double(forKey: "bill_amount"))
+            }
+            compute()
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,24 +87,15 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func onTap(sender: AnyObject) {
+    @IBAction func onTap(_ sender: AnyObject) {
         view.endEditing(true)
     }
-
-    func loadData() {
-        let de = NSUserDefaults.standardUserDefaults()
-
-        if (de.objectForKey("tip_index") != nil) {
-            ti = de.integerForKey("tip_index")
-        }
-
-        if de.objectForKey("currency_symbol") != nil {
-            cs = de.objectForKey("currency_symbol") as! String
-        }
+    
+    @IBAction func processBill(_ sender: AnyObject) {
+        compute()
     }
     
-    @IBAction func processBill(sender: AnyObject) {
-        
+    func compute() {
         let tipPercentages = [0.10, 0.15, 0.20]
         
         loadData()
@@ -70,11 +104,13 @@ class ViewController: UIViewController {
         let tip = bill * tipPercentages[segcTipPercentage.selectedSegmentIndex]
         let total = bill + tip
         
-        print()
-
+        
         lblTipAmount.text = String(format: "%.2f", tip)
         lblTotalAmount.text = String(format: "%.2f", total)
-    }
         
+        // Save Bill Ammount
+        saveBillAmount()
+        
+    }
 }
 

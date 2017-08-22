@@ -12,7 +12,7 @@ class SettingsViewController: UIViewController {
 
     @IBOutlet weak var secTip: UISegmentedControl!
     @IBOutlet weak var secCurrency: UISegmentedControl!
-    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = UserDefaults.standard
     
     var ti: Int = 0
     var cs: String = "$"
@@ -28,31 +28,31 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func tipValueChanged(sender: AnyObject) {
+    @IBAction func tipValueChanged(_ sender: AnyObject) {
         
-        defaults.setInteger(secTip.selectedSegmentIndex, forKey: "tip_index")
+        defaults.set(secTip.selectedSegmentIndex, forKey: "tip_index")
         defaults.synchronize()
     }
     
-    @IBAction func currencyValueChanged(sender: AnyObject) {
-        let symbol: String = secCurrency.titleForSegmentAtIndex(secCurrency.selectedSegmentIndex)!
+    @IBAction func currencyValueChanged(_ sender: AnyObject) {
+        let symbol: String = secCurrency.titleForSegment(at: secCurrency.selectedSegmentIndex)!
         defaults.setValue(symbol, forKey: "currency_symbol")
         defaults.synchronize()
     }
     
     func loadData() {
-        let de = NSUserDefaults.standardUserDefaults()
+        let de = UserDefaults.standard
         
-        if (de.objectForKey("tip_index") != nil) {
-            ti = de.integerForKey("tip_index")
+        if (de.object(forKey: "tip_index") != nil) {
+            ti = de.integer(forKey: "tip_index")
         }
         
-        if de.objectForKey("currency_symbol") != nil {
-            cs = de.objectForKey("currency_symbol") as! String
+        if de.object(forKey: "currency_symbol") != nil {
+            cs = de.object(forKey: "currency_symbol") as! String
         }
     }        
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
         loadData()
         
