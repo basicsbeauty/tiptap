@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](tiptap.gif)
+![Video Walkthrough](tiptap_demo.gif)
 
 
 
