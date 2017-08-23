@@ -11,11 +11,9 @@ import UIKit
 class SettingsViewController: UIViewController {
 
     @IBOutlet weak var secTip: UISegmentedControl!
-    @IBOutlet weak var secCurrency: UISegmentedControl!
     let defaults = UserDefaults.standard
     
     var ti: Int = 0
-    var cs: String = "$"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,11 +32,6 @@ class SettingsViewController: UIViewController {
         defaults.synchronize()
     }
     
-    @IBAction func currencyValueChanged(_ sender: AnyObject) {
-        let symbol: String = secCurrency.titleForSegment(at: secCurrency.selectedSegmentIndex)!
-        defaults.setValue(symbol, forKey: "currency_symbol")
-        defaults.synchronize()
-    }
     
     func loadData() {
         let de = UserDefaults.standard
@@ -47,21 +40,13 @@ class SettingsViewController: UIViewController {
             ti = de.integer(forKey: "tip_index")
         }
         
-        if de.object(forKey: "currency_symbol") != nil {
-            cs = de.object(forKey: "currency_symbol") as! String
-        }
-    }        
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         
         loadData()
-        
-        let currencyMap: [String: Int] = ["$":0, "€":1, "₹":2, "£":3]
-        
+                
         // Tip
         secTip.selectedSegmentIndex = ti
-        
-        // Currency Symbol
-        secCurrency.selectedSegmentIndex = currencyMap[cs]!
     }
 }

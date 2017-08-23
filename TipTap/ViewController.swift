@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblCurrency1: UILabel!
     @IBOutlet weak var lblCurrency2: UILabel!
     @IBOutlet weak var lblCurrency3: UILabel!
-    
+
     let de = UserDefaults.standard
 
     
@@ -33,10 +33,6 @@ class ViewController: UIViewController {
     func loadData() {
         if (de.object(forKey: "tip_index") != nil) {
             ti = de.integer(forKey: "tip_index")
-        }
-        
-        if de.object(forKey: "currency_symbol") != nil {
-            cs = de.object(forKey: "currency_symbol") as! String
         }
     }
     
@@ -68,10 +64,7 @@ class ViewController: UIViewController {
         // Tip
         segcTipPercentage.selectedSegmentIndex = ti
 
-        // Currency Symbol
-        lblCurrency1.text = cs
-        lblCurrency2.text = cs
-        lblCurrency3.text = cs
+        setCurrentcyLables()
         
         // Bill Amount
         if isValidBillAmountSaved() {
@@ -80,6 +73,23 @@ class ViewController: UIViewController {
             }
             compute()
         }
+        
+    }
+        
+    func setCurrentcyLables() {
+
+        let region: String = NSLocale.current.regionCode ?? "US"
+        print("RC:", region)
+        
+        let currencyMap: [String: String] = ["US":"$", "FR":"€", "IN":"₹", "GB":"£"]
+        
+        cs = currencyMap[region] ?? "$"
+        print("RC:", cs)
+        
+        // Currency Symbol
+        lblCurrency1.text = cs
+        lblCurrency2.text = cs
+        lblCurrency3.text = cs
     }
     
     override func didReceiveMemoryWarning() {
