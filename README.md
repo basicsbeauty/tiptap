@@ -31,8 +31,10 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+Core + Region Based Currency + Bill & Tip presistence
 ![Video Walkthrough](tiptap.gif)
 
+Label Animation
 ![Label Animation Video Walkthrough](tiptap_animation.gif)
 
 
