@@ -73,7 +73,20 @@ class ViewController: UIViewController {
             }
             compute()
         }
+    }
+    
+    func setAnimations() {
+        let animation: CATransition = CATransition()
+        animation.duration = 0.2
+        animation.type = kCATransitionFade
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         
+        lblCurrency1.layer.add(animation, forKey: "changeTextTransition")
+        lblCurrency2.layer.add(animation, forKey: "changeTextTransition")
+        lblCurrency3.layer.add(animation, forKey: "changeTextTransition")
+        
+        lblTipAmount.layer.add(animation, forKey: "changeTextTransition")
+        lblTipAmount.layer.add(animation, forKey: "changeTextTransition")
     }
         
     func setCurrentcyLables() {
@@ -113,7 +126,8 @@ class ViewController: UIViewController {
         let bill = Double(txtBillAmount.text!) ?? 0
         let tip = bill * tipPercentages[segcTipPercentage.selectedSegmentIndex]
         let total = bill + tip
-        
+     
+        setAnimations()
         
         lblTipAmount.text = String(format: "%.2f", tip)
         lblTotalAmount.text = String(format: "%.2f", total)
