@@ -24,6 +24,7 @@ The following **additional** features are implemented:
 - [x] Added Launch Icon
 - [x] Added custom color theme
 - [x] Added custom font for text/labels
+- [x] Saved Default Tip % across app restarts
 - [x] Added currency symbol as another preference (Removed it after implementing locale-specific, check old tiptap_demo.gif)
 
 
