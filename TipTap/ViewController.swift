@@ -73,6 +73,7 @@ class ViewController: UIViewController {
             }
             compute()
         }
+        txtBillAmount.becomeFirstResponder()
     }
     
     func setAnimations() {
@@ -135,6 +136,10 @@ class ViewController: UIViewController {
         // Save Bill Ammount
         saveBillAmount()
         
+    }
+
+    func addCommas(ammount: String, currenty:String) -> String {
+        return "Test"
     }
 }
 
