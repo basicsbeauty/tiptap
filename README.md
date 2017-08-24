@@ -14,10 +14,10 @@ The following **required** functionality is complete:
 * [x] Settings page to change the default tip percentage.
 
 The following **optional** features are implemented:
+* [x] Using locale-specific currency
 * [x] UI animations (implemented for tip and toal amount labels)
 * [x] Remembering the bill amount across app restarts (if <10mins)
-* [x] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
@@ -40,6 +40,9 @@ Label Animation
 
 ![Label Animation Video Walkthrough](tiptap_animation.gif)
 
+Bill Amount First Responder
+
+![Label Animation Video Walkthrough](tiptap_first_responder.gif)
 
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
